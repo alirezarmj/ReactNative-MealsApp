@@ -8,7 +8,15 @@ function MealsOverviewScreen({ route }) {
     return item.categoryIds.indexOf(catId) >= 0;
   });
   function renderMealItem(itemdata) {
-    return <MealItem title={itemdata.item.title} />;
+    return (
+      <MealItem
+        title={itemdata.item.title}
+        imageUrl={itemdata.item.imageUrl}
+        complexity={itemdata.item.complexity}
+        duration={itemdata.item.duration}
+        affordability={itemdata.item.affordability}
+      />
+    );
   }
   return (
     <View style={styles.container}>
