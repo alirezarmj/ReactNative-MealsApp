@@ -24,6 +24,7 @@ function MealsOverviewScreen({ route, navigation }) {
         complexity={itemdata.item.complexity}
         duration={itemdata.item.duration}
         affordability={itemdata.item.affordability}
+        id={itemdata.item.id}
       />
     );
   }
